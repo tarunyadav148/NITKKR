@@ -8,7 +8,7 @@
 
 header section{
     display: flex;
-    background-image: url('/pics/header-img.jpg');
+    background-image: url('/pics/headerimg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
