@@ -106,7 +106,7 @@ section:not(.nit-head){
     display: flex;
     position: relative;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 20px;
     justify-content: center;
     
@@ -118,8 +118,9 @@ section:not(.nit-head){
 
 .titl h1:hover{
     /* color: rgb(126, 123, 123); */
-    transform: scale(1.5);
+    transform: scale(1.3);
     box-shadow: 15px 15px 15px 15px grey;
+    border-radius: 30px;
 }
 
 .college-img{
