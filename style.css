@@ -11,7 +11,7 @@
 
 header section{
     display: flex;
-    background-image: url('/pics/headerimg.jpg');
+    background-image: linear-gradient(rgb(214, 216, 185),rgb(177, 163, 163));
     background-repeat: no-repeat;               
     background-size:cover;
 }
