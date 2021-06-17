@@ -57,6 +57,11 @@ function nightmode()
         {
             card.classList.add('dark-card');
         }
+        const alinks = document.querySelectorAll('.notify a');
+        for(let link of alinks)
+        {
+            link.style.color = "white";
+        }
         document.querySelector('marquee').style.backgroundColor="black";;
     }
     else
@@ -80,6 +85,11 @@ nightmodeBtn.addEventListener('click',function(e){
         for(let card of cardlist)
         {
             card.classList.add('dark-card');
+        }
+        const alinks = document.querySelectorAll('.notify a');
+        for(let link of alinks)
+        {
+            link.style.color = "white";
         }
         document.querySelector('marquee').style.backgroundColor="black";
 })
