@@ -173,7 +173,7 @@
                 <h1>Announcement</h1>
             </div>
             <div class="notify-body">
-                <marquee direction="up">
+                <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
                     <ul>
                       <li>
                         <a href="# ">Notification regarding closing of institute till further
@@ -215,7 +215,7 @@
                 <h1>Notification</h1>
             </div>
             <div class="notify-body">
-                <marquee direction="up" direct="">
+                <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
                     <ul>
                         <li><a href="#">First merit List MBA Admission 2021-23</a></li><hr>
                         <li><a href="#">Provisional Re-Appear cut list of Internal & External Re-Appear Examinations (MayJune-2021) [Phase-XIII]</a></li><hr>
@@ -256,29 +256,34 @@
 
     </section>
 
-    <!--Placement Statics-->
-    <section class="placement">
-        <div class="titl">
-            <h1>Placement</h1>
-        </div>
-    </section>
-
     <!--Facilities-->
     <section class="facilities">
         <div class="titl">
             <h1>Facilities</h1>
         </div>
+
+        <div class="facilities-container">
+            <div class="card">
+                <div class="image" id="imglib"></div>
+                <div class="course-name">Library</div>
+            </div>
+
+            <div class="card">
+                <div class="image" id="imgpool"></div>
+                <div class="course-name">Pool</div>
+            </div>
+
+            <div class="card">
+                <div class="image" id="imggym"></div>
+                <div class="course-name">Gym</div>
+            </div>
+
+            <div class="card">
+                <div class="image" id="imgsports"></div>
+                <div class="course-name">Sports</div>
+            </div>
+        </div>
     </section>
-
-    <pre>
-
-
-
-
-
-
-
-    </pre>
     <!--Footer of Website-->
     <footer>
         <div class="main-footer">

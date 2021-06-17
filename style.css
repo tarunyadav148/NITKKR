@@ -230,6 +230,7 @@ section:not(.nit-head){
     text-align: center;
     border-radius: 30px;
     transition: 0.5s;
+    border-bottom: 2px solid black;
 }
 
 .notify:hover{
@@ -263,7 +264,6 @@ section:not(.nit-head){
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-image: radial-gradient(#c92727,#5f0809);
-    background-color: #610b0c;
     font-size: 20px;
 }
 .notify-head h1{
@@ -276,6 +276,7 @@ section:not(.nit-head){
     height: 300px;
     border-radius: 30px;
 }
+
 
 /*course offered*/
 .course-container{
@@ -335,6 +336,41 @@ section:not(.nit-head){
     background-image: url('./pics/science.jpg');
     background-size: cover;
 }
+
+/*Facilities*/
+.facilities-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.facilities-container .card{
+    width: 200px;
+    height: 250px;
+}
+#imglib{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/library.jpeg');
+    background-size: cover;
+}
+#imgpool{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/pool.jpeg');
+    background-size: cover;
+}
+#imggym{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/gym.jpg');
+    background-size: cover;
+}
+#imgsports{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/sports.jpg');
+    background-size: cover;
+}
+
 
 /*------------*/
 
