@@ -41,10 +41,57 @@ function slideshow()
 }
 
 
-//-----------
 
-// const campmain = document.querySelector('#camp-main');
-// campmain.addEventListener('click',function(e){
-//     campmain.width = '100%';
-//     campmain.heigth = 'auto';
-// })
+//Night mode
+setTimeout(nightmode,6);
+function nightmode()
+{ 
+    date = new Date;
+    console.log(date.getHours())
+    if(date.getHours()>18||date.getHours()<5)
+    {
+        console.log("d")
+        document.body.classList.add('darkmode');
+        let cardlist = document.querySelectorAll('.card');
+        for(let card of cardlist)
+        {
+            card.classList.add('dark-card');
+        }
+        document.querySelector('marquee').style.backgroundColor="black";;
+    }
+    else
+    {
+        document.body.classList.remove('darkmode');
+        let cardlist = document.querySelectorAll('.card');
+        for(let card of cardlist)
+        {
+            card.classList.remove('dark-card');
+        }
+        console.log(document.querySelector('marquee'))
+        document.querySelector('marquee').style.backgroundColor="rgb(46, 44, 44)";
+    }
+    
+}
+
+const nightmodeBtn = document.querySelector('#nightmode');
+nightmodeBtn.addEventListener('click',function(e){
+    document.body.classList.add('darkmode');
+        let cardlist = document.querySelectorAll('.card');
+        for(let card of cardlist)
+        {
+            card.classList.add('dark-card');
+        }
+        document.querySelector('marquee').style.backgroundColor="black";
+})
+
+const daymodeBtn = document.querySelector('#daymode');
+daymodeBtn.addEventListener('click',function(e){
+    document.body.classList.add('darkmode');
+    document.body.classList.remove('darkmode');
+    let cardlist = document.querySelectorAll('.card');
+    for(let card of cardlist)
+    {
+        card.classList.remove('dark-card');
+    }
+    document.querySelector('marquee').style.backgroundColor="rgb(46, 44, 44)";
+})
