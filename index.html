@@ -11,14 +11,7 @@
 
     <!--Header of Website-->
     <header>
-        <!--Heading and logo section of header-->
-        <section>
-            <img src="./pics/logo.png">
-            <div>
-                <p>National Institute Of Technology Kurukshetra</p>
-                <p>Institute Of National Importance</p>
-            </div>
-        </section>
+
         <!--Navigation Bar-->
         <nav>
             <ul>
@@ -124,14 +117,27 @@
                 <li><a href="#">ALUMNI ASSOCIATION</a></li>
             </ul>
         </nav>
+
+        <!--Heading and logo section of header-->
+        <section class="nit-head">
+            <img src="./pics/logo.png">
+            <div>
+                <p>National Institute Of Technology Kurukshetra</p>
+                <p>Institute Of National Importance</p>
+            </div>
+        </section>
+
+        <!--Imp information Marquee-->
+    <marquee onmouseover="this.stop()" onmouseout="this.start()">This website is under construction</marquee>
+        
     </header>
 
-    <!--Imp information Marquee-->
-    <marquee onmouseover="this.stop()" onmouseout="this.start()">This website is under construction</marquee>
+    
 
     <!--Images of college section-->
     <section class="campus">
-        <h1>Our Campus</h1>
+        <div class="titl"><h1>Our Campus</h1></div>
+        <img src="./pics/background.jpg" id="camp-main">
         <div class="college-img">
             <button id="left">&lt</button>
             <img src="./pics/nitkkr.jpg" id="slideshowimg1">

@@ -42,3 +42,9 @@ function slideshow()
 
 
 //-----------
+
+// const campmain = document.querySelector('#camp-main');
+// campmain.addEventListener('click',function(e){
+//     campmain.width = '100%';
+//     campmain.heigth = 'auto';
+// })
