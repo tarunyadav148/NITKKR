@@ -47,7 +47,6 @@ setTimeout(nightmode,6);
 function nightmode()
 { 
     date = new Date;
-    console.log(date.getHours())
     if(date.getHours()>18||date.getHours()<5)
     {
         console.log("d")
@@ -72,7 +71,11 @@ function nightmode()
         {
             card.classList.remove('dark-card');
         }
-        console.log(document.querySelector('marquee'))
+        const alinks = document.querySelectorAll('.notify a');
+        for(let link of alinks)
+        {
+            link.style.color = "black";
+        }
         document.querySelector('marquee').style.backgroundColor="rgb(46, 44, 44)";
     }
     
@@ -102,6 +105,11 @@ daymodeBtn.addEventListener('click',function(e){
     for(let card of cardlist)
     {
         card.classList.remove('dark-card');
+    }
+    const alinks = document.querySelectorAll('.notify a');
+    for(let link of alinks)
+    {
+        link.style.color = "black";
     }
     document.querySelector('marquee').style.backgroundColor="rgb(46, 44, 44)";
 })
