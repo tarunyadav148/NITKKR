@@ -602,4 +602,10 @@ footer hr{
          font-size: 20px;
          opacity: 0.25;
      }
+     .college-img img{
+        margin-top: -5px;
+        height: 200px;
+        width: 400px;
+        transition: ease-in 1s;
+    }
 }
