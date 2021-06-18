@@ -3,7 +3,7 @@
 var slideshowCounter1 = 0;
 var slideshowCounter2 = 1;
 
-var slides = ["./pics/nitkkr.jpg","./pics/dirertor.jpg","./pics/inaug.jpeg","./pics/library.jpg","./pics/pond.jpg","./pics/nitkkr2.jpg","./pics/hostel1.jpg","./pics/hostel2.jpg","./pics/hostel3.jpg"]
+var slides = ["./pics/nitkkr.jpg","./pics/dirertor.jpg","./pics/inaug.jpeg","./pics/library.jpg","./pics/pond.jpg","./pics/nitkkr2.jpg","./pics/hostel1.jpg","./pics/hostel2.jpg","./pics/hostel3.jpg","./pics/background.jpg","./pics/headerimg.jpg"]
 
 const slide1 = document.querySelector('#slideshowimg1');
 const slide2 = document.querySelector('#slideshowimg2');
@@ -112,4 +112,20 @@ daymodeBtn.addEventListener('click',function(e){
         link.style.color = "black";
     }
     document.querySelector('marquee').style.backgroundColor="rgb(46, 44, 44)";
+})
+
+
+//on click event on menu btn for small screen devices
+let menuState = false;
+const menu = document.querySelector('#menubtn');
+menu.addEventListener('click',function(e){
+    if(!menuState)
+    {
+        document.querySelector('nav ul').style.display = 'block';
+        menuState = true;
+    }
+    else{
+        document.querySelector('nav ul').style.display = 'none';
+        menuState = false;
+    }
 })

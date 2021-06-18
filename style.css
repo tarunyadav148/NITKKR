@@ -116,6 +116,10 @@ nav ul li:hover .nav-sub ul{
     cursor: pointer;
 }
 
+#menubtn{
+    display: none;
+}
+
 
 /*Marquee*/
 header marquee{
@@ -136,8 +140,8 @@ header marquee{
 
 section:not(.nit-head){
     font-family: 'Roboto', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .titl{
@@ -380,12 +384,12 @@ section:not(.nit-head){
 
 footer{
    margin-top: 10px;
+   background-color: rgb(46, 43, 43);
 }
 
 footer div, footer p{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(46, 43, 43);
     padding: 0px;
     color: white;
 }
@@ -434,3 +438,168 @@ footer hr{
 }
 
 /*---------*/
+
+
+/*for low width devices*/
+@viewport{
+    zoom:1.0;
+    width: 100vw;
+}
+
+@media(max-width:700px)
+{
+
+    header section{
+        display: flex;
+        flex-flow: column wrap;
+        background-image: linear-gradient(rgb(214, 216, 185),rgb(177, 163, 163));
+        background-repeat: no-repeat;               
+        background-size:cover;
+    }
+    
+    header section img{
+        align-self: center;
+        width:200px;
+        height:200px;
+    }
+    
+    header section div p:first-child{
+        text-align: center;
+        font-size:30px;
+    }
+    header section div p:nth-child(2){
+        font-size: 20px;
+    }
+    .modes{
+        display: flex;
+        flex-direction: row-reverse;
+        float: right;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        margin-left: -50%;
+    }
+    
+    #nightmode{
+        width: 30px;
+        height: 30px;
+        opacity: 0.2;
+        border-radius: 30px;
+    }
+    
+    #daymode{
+        width: 30px;
+        height: 30px;
+        opacity: 0.2;
+        border-radius: 30px;
+    }
+    #menubtn{
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-size: cover;
+    }
+    nav ul{
+        position: absolute;
+        list-style: none;
+        color: white;
+        justify-content: left;
+        justify-self: left;
+        background-color: #610b0c;
+        text-align: center;
+        align-items: left;
+        width: 200px;
+        height: 100vh;
+        z-index: 1;
+        box-shadow: 10px 10px 15px black;
+        display: none;
+    }
+
+    .titl{
+        display: flex;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        justify-content: center;
+        
+    }
+    
+    .notification{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .notify{
+        margin-left: 5%;
+    }
+    .course-container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    .facilities-container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    footer{
+        margin-top: -20%;
+    }
+    footer div:not(.social-media){
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        background-color: rgb(46, 43, 43);
+        padding: 0px;
+        color: white;
+        margin-left: 30%;
+    }
+
+    footer p{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        background-color: rgb(46, 43, 43);
+        padding: 0px;
+        color: white;
+        margin-left: 15%;
+    }
+    .college-img{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .social-media{
+        padding: 0px;
+        margin-left: 5%;
+    }
+    .campus video{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        border-radius: 70px;
+        transition: 0.5s;
+    }
+    #left{
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 0px;
+        padding: 20px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+        opacity: 0.25;
+     }
+     #right{
+         position: absolute;
+         margin-left: 80%;
+         margin-top: 0px;
+         padding: 20px;
+         border-radius: 10px;
+         border-style: none;
+         font-size: 20px;
+         opacity: 0.25;
+     }
+}
